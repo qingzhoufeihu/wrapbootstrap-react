@@ -1,0 +1,8 @@
+[*]
+indent_style = tab
+
+[*.{css,js,json,html,htm,scss}]
+indent_size = 2
+
+[*.py]
+indent_size = 4
