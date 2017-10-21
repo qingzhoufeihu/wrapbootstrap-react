@@ -23,10 +23,10 @@ import C3 from './components/graphs/c3';
 import Peity from './components/graphs/peity';
 import Sparkline from './components/graphs/sparkline';
 
-import Inbox from './components/inbox';
-import EmailView from './components/emailview';
-import ComposeEmail from './components/composeemail';
-import EmailTemplates from './components/emailtemplates';
+import Inbox from './components/mailbox/inbox';
+import EmailView from './components/mailbox/emailview';
+import ComposeEmail from './components/mailbox/composeemail';
+import EmailTemplates from './components/mailbox/emailtemplates';
 
 import Metrics from './components/metrics';
 

@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
+import {
+	Layout,
+} from 'antd';
+
+import Head from '../../../head';
+
+const { Content } = Layout;
 
 class Dashboard_1 extends Component {
 	render() {
 		return (
-			<div>Dashboard_1</div>
+			<Layout>
+				<Head />
+				<Content>
+				</Content>
+			</Layout>
 		)
 	}
 }
