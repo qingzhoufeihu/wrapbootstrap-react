@@ -4,6 +4,7 @@ import {
 } from 'antd';
 
 import Head from '../../../head';
+import Foot from '../../../foot';
 import Row1Col1 from './row1col1';
 import Row1Col2 from './row1col2';
 import Row1Col3 from './row1col3';
@@ -12,13 +13,13 @@ import Row2Col2 from './row2col2';
 import Row2Col3 from './row2col3';
 import Chat from './chat';
 
-const { Content, Footer } = Layout;
+const { Content } = Layout;
 
 class Dashboard_1 extends Component {
 	render() {
 		return (
 			<Layout>
-				<Head />
+				<Head color='#ececec' />
 				<Content>
 					<Row style={{ background: '#fff', minHeight: 300, padding: 20 }}>
 						<Col span={6}>
@@ -44,9 +45,7 @@ class Dashboard_1 extends Component {
 					</Row>
 					<Chat />
 				</Content>
-				<Footer style={{ backgroundColor: '#fff', border: '1px solid #ececec', height: 30 }}>
-					<span><strong>Copyright</strong> 源清慧虹信息科技有限公司 ©2013-2017</span>
-				</Footer>
+				<Foot />
 			</Layout>
 		)
 	}

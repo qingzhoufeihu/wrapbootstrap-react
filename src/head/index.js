@@ -202,7 +202,7 @@ const Sets = () => {
 class Head extends Component {
 	render() {
 		return (
-			<Header style={{ background: '#ececec' }}>
+			<Header style={{ background: this.props.color }}>
 				<Row>
 					<Col span={4}>
 						<Search
