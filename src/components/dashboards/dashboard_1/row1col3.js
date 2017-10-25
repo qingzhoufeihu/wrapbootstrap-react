@@ -16,8 +16,8 @@ const Row1Col3 = () => {
 			</Row>
 			<Row>
 				<PieChart width={300} height={200}>
-					<Pie isAnimationActive={false} data={row1col3.data1} cx={60} cy={100} outerRadius={50} fill="#8884d8" label />
-					<Pie data={row1col3.data2} cx={220} cy={100} innerRadius={30} outerRadius={50} fill="#82ca9d" />
+					<Pie dataKey='value' isAnimationActive={false} data={row1col3.data1} cx={60} cy={100} outerRadius={50} fill="#8884d8" label />
+					<Pie dataKey='value' data={row1col3.data2} cx={220} cy={100} innerRadius={30} outerRadius={50} fill="#82ca9d" />
 					<Tooltip />
 				</PieChart>
 			</Row>

@@ -3,7 +3,7 @@ import {
 	Row, Col, Icon,
 	Tag,
 } from 'antd';
-import { LineChart, XAxis, YAxis, Tooltip, Legend, CartesianGrid, Area, Bar, Line } from 'recharts';
+import { LineChart, XAxis, YAxis, Tooltip, Legend, CartesianGrid, Line } from 'recharts';
 
 import { row3col2_3, row3col2_4 } from '../../../asserts/data/dashboards/dashboard2';
 import Tables from '../../../common/tables';

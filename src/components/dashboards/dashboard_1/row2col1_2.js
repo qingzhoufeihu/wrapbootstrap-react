@@ -29,14 +29,12 @@ class Row2Col1_2 extends Component {
 		return (
 			<Row style={{ background: '#fff', margin: 20, display: this.state.close ? 'none' : 'block' }}>
 				<Row style={{ margin: 15 }}>
-					<Col span={20}>
-						<span style={{ fontSize: 14, fontWeight: 600 }}>Read below comments</span>
-					</Col>
-					<Col span={4}>
+					<div style={{ float: 'right' }}>
 						<Icon type={this.state.collapsed ? 'up': 'down'} onClick={this.toggle} style={{ fontSize: 15, fontWeight: 600, marginRight: 5 }} />
 						<Dropdown overlay={menus}><Icon type='tool' style={{ fontSize: 15, fontWeight: 600, marginRight: 5 }} /></Dropdown>
 						<Icon type='close' onClick={this.close} style={{ fontSize: 15, fontWeight: 600 }} />
-					</Col>
+					</div>
+					<span style={{ fontSize: 14, fontWeight: 600 }}>Read below comments</span>
 				</Row>
 				<Row style={{ borderTop: '1px solid #ececec', display: this.state.collapsed ? 'none' : 'block' }}>
 					{row2col1_2.comments.map((_c, _ci) => {

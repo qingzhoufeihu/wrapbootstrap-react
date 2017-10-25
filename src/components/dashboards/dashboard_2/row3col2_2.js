@@ -32,7 +32,7 @@ class Row3Col2_2 extends Component {
 				<Row style={{ display: this.state.collapsed ? 'none' : 'block', margin: 20 }}>
 					{data.map((_d, _di) => {
 						return (
-							<div style={{ backgroundColor: '#ececec', marginBottom: 5, paddingLeft: 10, height: 30, lineHeight: '30px' }}>
+							<div key={_di} style={{ backgroundColor: '#ececec', marginBottom: 5, paddingLeft: 10, height: 30, lineHeight: '30px' }}>
 								<Checkbox key={_di} onChange={() => this.change(_di)} defaultChecked={_d.checked}><span style={{textDecoration: _d.checked ? 'line-through' : 'none' }}>{_d.content}</span></Checkbox>
 							</div>
 						);
