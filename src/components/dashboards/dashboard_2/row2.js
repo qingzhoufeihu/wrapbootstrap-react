@@ -17,7 +17,6 @@ class Row2 extends Component {
 	onChange = (e) => this.setState({ date: e.target.value })
 	render() {
 		const date = this.state.date;
-		console.log(window.innerWidth, '?????')
 		return (
 			<Row style={{ background: '#fff' }}>
 				<Row style={{ padding: 10}}>

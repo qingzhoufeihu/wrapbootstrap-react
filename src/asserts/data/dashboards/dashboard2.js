@@ -258,45 +258,63 @@ export const row3col2_2 = [
 	},
 ];
 
-export const row2col2_3 = {
-	titles: ['Transaction', 'Date', 'Amount'],
-	dataIndexs: ['Transaction', 'Date', 'Amount'],
+export const row3col2_3 = {
+	titles: ['No.', 'Transaction', 'Date', 'Amount'],
+	dataIndexs: ['No.', 'Transaction', 'Date', 'Amount'],
 	data: [
 		{
+			'No.': 1,
 			Transaction: 'Security doors',
 			Date: '16 Jun 2014',
-			Amount: '$483.00',
+			Amount: 483.00,
 			color: '#1ab394',
 		},
 		{
+			'No.': 2,
 			Transaction: 'Wardrobes',
 			Date: '10 Jun 2014',
-			Amount: '$327.00',
+			Amount: 327.00,
 			color: '#1ab394',
 		},
 		{
+			'No.': 3,
 			Transaction: 'Set of tools',
 			Date: '12 Jun 2014',
-			Amount: '$125.00',
+			Amount: 125.00,
 			color: '#f8ac59',
 		},
 		{
+			'No.': 4,
 			Transaction: 'Panoramic pictures',
 			Date: '22 Jun 2013',
-			Amount: '$344.00',
+			Amount: 344.00,
 			color: '#1ab394',
 		},
 		{
+			'No.': 5,
 			Transaction: 'Phones',
 			Date: '24 Jun 2013',
-			Amount: '$235.00',
+			Amount: 235.00,
 			color: '#1ab394',
 		},
 		{
+			'No.': 6,
 			Transaction: 'Monitors',
 			Date: '26 Jun 2013',
-			Amount: '$100.00',
+			Amount: 100.00,
 			color: '#1ab394',
 		},
-	]
+	],
+};
+
+export const row3col2_4 = {
+	data: [
+		{name: 'Page A', uv: 4000, pv: 2400, amt: 2400},
+		{name: 'Page B', uv: 3000, pv: 1398, amt: 2210},
+		{name: 'Page C', uv: 2000, pv: 9800, amt: 2290},
+		{name: 'Page D', uv: 2780, pv: 3908, amt: 2000},
+		{name: 'Page E', uv: 1890, pv: 4800, amt: 2181},
+		{name: 'Page F', uv: 2390, pv: 3800, amt: 2500},
+		{name: 'Page G', uv: 3490, pv: 4300, amt: 2100},
+	],
 }
