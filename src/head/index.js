@@ -204,39 +204,29 @@ class Head extends Component {
 		return (
 			<Header style={{ background: this.props.color }}>
 				<Row>
-					<Col span={4}>
-						<Search
-							placeholder='Search for something...'
-							style={{ width: 200 }}
-							size='large'
-						/>
-					</Col>
-					<Col span={5} offset={10} >
+					<Search
+						placeholder='Search for something...'
+						style={{ width: 200 }}
+						size='large'
+					/>
+					<div style={{ float: 'right ' }}>
 						<span style={{ fontSize: 16 }}>Welcome to INSPINIA+ Admin Theme.</span>
-					</Col>
-					<Col span={1}>
 						<Dropdown overlay={<Mails />} trigger={['click']} placement='bottomRight'>
 							<Badge count={16} style={{ backgroundColor: '#f8ac59'}}>
-								<Icon type='mail' style={{ fontSize: 22 }} />
+								<Icon type='mail' style={{ fontSize: 22, paddingLeft: 20 }} />
 							</Badge>
 						</Dropdown>
-					</Col>
-					<Col span={1}>
 						<Dropdown overlay={<Alarms />} trigger={['click']} placement='bottomRight'>
 							<Badge count={8} style={{ backgroundColor: '#1ab394'}}>
-								<Icon type='bell' style={{ fontSize: 22 }} />
+								<Icon type='bell' style={{ fontSize: 22, paddingLeft: 20 }} />
 							</Badge>
 						</Dropdown>
-					</Col>
-					<Col span={2}>
-						<Icon type='logout' style={{ fontSize: 14 }} />
-						<span style={{ marginLeft: 5, fontSize: 14, fontWeight: 600 }}>Log out</span>
-					</Col>
-					<Col span={1}>
+						<Icon type='logout' style={{ fontSize: 14, paddingLeft: 20 }} />
+						<span style={{ marginLeft: 5, fontSize: 14, fontWeight: 600 }}>  Log out</span>
 						<Dropdown overlay={<Sets />} trigger={['click']} placement='bottomRight'>
-							<Icon type='bars' style={{ fontSize: 22 }} />
+							<Icon type='bars' style={{ fontSize: 22, paddingLeft: 20 }} />
 						</Dropdown>
-					</Col>
+					</div>
 				</Row>
 			</Header>
 		)
