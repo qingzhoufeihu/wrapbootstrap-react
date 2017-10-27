@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-	Row, Col, Menu,
+	Row, Menu,
 	Icon, Dropdown,
 } from 'antd';
 import { BarChart, Bar } from 'recharts';

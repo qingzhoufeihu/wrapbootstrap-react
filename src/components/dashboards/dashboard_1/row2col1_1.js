@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-	Row, Col, Menu,
+	Row, Menu,
 	Icon, Dropdown, Tag,
 } from 'antd';
 import { CartesianGrid, Tooltip, BarChart, Bar } from 'recharts';

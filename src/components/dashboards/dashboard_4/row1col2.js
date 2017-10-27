@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-	Row, Col, Tag,
+	Row, Tag,
 } from 'antd';
 import { AreaChart, Area } from 'recharts';
 
@@ -17,7 +17,7 @@ class Row1Col2 extends Component {
 					</div>
 				</Row>
 				<Row style={{ backgroundColor: '#fff' }}>
-					<AreaChart width={300} height={65} data={row1col2.data} margin={{top: 5, right: 0, left: 0, bottom: 5}}>
+					<AreaChart width={500} height={65} data={row1col2.data} margin={{top: 5, right: 0, left: 0, bottom: 5}}>
 						<Area type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
 					</AreaChart>
 				</Row>
