@@ -27,15 +27,6 @@ export const row1col1 = [
 ];
 
 export const row1col2 = {
-	data: [
-		{name: 'Page A', uv: 4000, pv: 2400, amt: 2400},
-		{name: 'Page B', uv: 3000, pv: 1398, amt: 2210},
-		{name: 'Page C', uv: 2000, pv: 9800, amt: 2290},
-		{name: 'Page D', uv: 2780, pv: 3908, amt: 2000},
-		{name: 'Page E', uv: 1890, pv: 4800, amt: 2181},
-		{name: 'Page F', uv: 2390, pv: 3800, amt: 2500},
-		{name: 'Page G', uv: 3490, pv: 4300, amt: 2100},
-	],
 	content: [
 		{
 			money: '$ 406,100',
@@ -144,9 +135,9 @@ export const row2col2 = [
 		"post": "posted a new blog. ",
 		"postdate": "5m ago",
 		"date": "Today 5:60 pm - 12.06.2014",
-		"like": false,
+		"like": true,
 		"love": false,
-		"ref": "",
+		"ref": "you say right.",
 	},
 	{
 		"img": require("../../img/a2.jpg"),
@@ -155,8 +146,8 @@ export const row2col2 = [
 		"postdate": "2m ago",
 		"date": "Today 2:10 pm - 12.06.2014",
 		"like": false,
-		"love": false,
-		"ref": "",
+		"love": true,
+		"ref": "I just want to get a good job.",
 	},
 	{
 		"img": require("../../img/a3.jpg"),
@@ -164,7 +155,7 @@ export const row2col2 = [
 		"post": "add 1 photo on Monica Smith. ",
 		"postdate": "2h ago",
 		"date": "2 days ago at 8:30am",
-		"like": false,
+		"like": true,
 		"love": false,
 		"ref": "",
 	},
@@ -174,7 +165,7 @@ export const row2col2 = [
 		"post": "started following Monica Smith. ",
 		"postdate": "5h ago",
 		"date": "Yesterday 1:21 pm - 11.06.2014",
-		"like": true,
+		"like": false,
 		"love": true,
 		"ref": "",
 	},
@@ -194,8 +185,8 @@ export const row2col2 = [
 		"post": "love Kim Smith.",
 		"postdate": "23h ago",
 		"date": "2 days ago at 2:30 am - 11.06.2014",
-		"like": false,
-		"love": false,
+		"like": true,
+		"love": true,
 		"ref": "",
 	},
 	{

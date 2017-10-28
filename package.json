@@ -5,6 +5,7 @@
   "dependencies": {
     "antd": "^2.13.6",
     "axios": "^0.16.2",
+    "chart.js": "^2.7.0",
     "draft-js": "^0.10.1",
     "draftjs-to-html": "^0.7.6",
     "html-to-draftjs": "^1.0.1",

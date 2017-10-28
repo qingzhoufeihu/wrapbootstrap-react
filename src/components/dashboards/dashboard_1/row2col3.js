@@ -38,18 +38,18 @@ class Row2Col3 extends Component {
 						{row2col3.data.map((_d, _di) => {
 							return (
 								<Row key={_di} style={{ minHeight: 100 }}>
-									<Col span={6}>
+									<Col xs={4} sm={4} md={4} lg={6}>
 										<div style={{ float: 'right', paddingLeft: 5, paddingRight: 5, border: '1px solid #ececec', backgroundColor: '#ececec' }}>
 											<Icon type={_d.icon} style={{ fontSize: 20 }} />
 										</div>
 										<br />
-										<div style={{ marginLeft: 30, marginTop: 20 }}>
+										<div style={{ float: 'right', marginTop: 5 }}>
 											<span>{_d.date}</span>
 											<br />
 											<a>{_d.postdate}</a>
 										</div>
 									</Col>
-									<Col span={14} style={{ borderLeft: '1px solid #ececec', borderBottom: '1px solid #ececec', padding: 15 }}>
+									<Col xs={20} sm={20} md={20} lg={18} style={{ borderLeft: '1px solid #ececec', borderBottom: '1px solid #ececec', padding: 15 }}>
 										<h3>{_d.head}</h3>
 										<p>{_d.content}</p>
 									</Col>

@@ -22,24 +22,24 @@ class Dashboard_1 extends Component {
 				<Head color='#ececec' />
 				<Content>
 					<Row style={{ background: '#fff', minHeight: 300, padding: 20 }}>
-						<Col span={6}>
+						<Col sm={24} md={6}>
 							<Row1Col1 />
 						</Col>
-						<Col span={14}>
+						<Col sm={24} md={14}>
 							<Row1Col2 />
 						</Col>
-						<Col span={4}>
+						<Col sm={12} md={4}>
 							<Row1Col3 />
 						</Col>
 					</Row>
 					<Row>
-						<Col span={8}>
+						<Col md={24} lg={8}>
 							<Row2Col1 />
 						</Col>
-						<Col span={8}>
+						<Col md={24} lg={8}>
 							<Row2Col2 />
 						</Col>
-						<Col span={8}>
+						<Col md={24} lg={8}>
 							<Row2Col3 />
 						</Col>
 					</Row>
