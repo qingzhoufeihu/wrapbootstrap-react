@@ -15,7 +15,7 @@ class Row1Col1 extends Component {
 						<Col key={_ri} span={12}>
 							<h1>{_r.num}</h1>
 							<span>{_r.content}</span>
-							<LineChart width={450} height={150} data={_r.data} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+							<LineChart width={250} height={100} data={_r.data} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
 								<CartesianGrid strokeDasharray="3 3"/>
 								<Tooltip/>
 								<Legend />
