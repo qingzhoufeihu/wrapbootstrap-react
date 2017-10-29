@@ -22,33 +22,33 @@ class Row2Col1_2 extends Component {
 					label: '# of Votes',
 					data: [12, 19, 3, 5, 2, 3],
 					backgroundColor: [
-							'rgba(255, 99, 132, 0.2)',
-							'rgba(54, 162, 235, 0.2)',
-							'rgba(255, 206, 86, 0.2)',
-							'rgba(75, 192, 192, 0.2)',
-							'rgba(153, 102, 255, 0.2)',
-							'rgba(255, 159, 64, 0.2)'
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(255, 159, 64, 0.2)',
 					],
 					borderColor: [
-							'rgba(255,99,132,1)',
-							'rgba(54, 162, 235, 1)',
-							'rgba(255, 206, 86, 1)',
-							'rgba(75, 192, 192, 1)',
-							'rgba(153, 102, 255, 1)',
-							'rgba(255, 159, 64, 1)'
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)',
 					],
-					borderWidth: 1
-				}]
+					borderWidth: 1,
+				}],
 			},
 			options: {
-        scales: {
+				scales: {
 					yAxes: [{
 						ticks: {
-							beginAtZero:true
-						}
-					}]
-        }
-			}
+							beginAtZero: true,
+						},
+					}],
+				},
+			},
 		});
 	}
 	toggle = () => this.setState({ collapsed: !this.state.collapsed })
@@ -73,7 +73,7 @@ class Row2Col1_2 extends Component {
 						return (
 							<Row key={_ci} style={{ padding: 10, borderTop: '1px solid #ececec' }}>
 								<p><a style={{ color: '#4bc6c6' }}>@{_c.name}</a>{_c.content}</p>
-								{_c.commentbar ? <canvas id='row2col1_2'></canvas> : null}
+								{_c.commentbar ? <canvas id='row2col1_2' style={{ maxHeight: 150 }}></canvas> : null}
 								<p><Icon type='clock-circle-o' />{_c.date}</p>
 							</Row>
 						)

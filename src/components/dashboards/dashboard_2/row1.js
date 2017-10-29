@@ -10,7 +10,7 @@ const Row1 = () => {
 	const rows = row1.map((_r, _ri) => {
 		const color = _r.color;
 		return (
-			<Col key={_ri} span={parseInt(24 / row1.length, 10)} style={{ padding: 20 }}>
+			<Col md={24} key={_ri} lg={parseInt(24 / row1.length, 10)} style={{ padding: 20 }}>
 				<Row style={{ padding: 10, backgroundColor: '#fff', borderBottom: '1px solid #ececec' }}>
 					<span style={{ fontSize: 16, fontWeight: 600 }}>{_r.name}</span>
 					<div style={{ float: 'right' }}>

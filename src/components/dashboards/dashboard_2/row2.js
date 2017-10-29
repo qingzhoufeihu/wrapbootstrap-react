@@ -3,7 +3,7 @@ import {
 	Row, Col, Radio,
 	Progress, Icon,
 } from 'antd';
-import { ComposedChart, XAxis, YAxis, Tooltip, Legend, CartesianGrid, Area, Bar, Line } from 'recharts';
+import Chart from 'chart.js';
 
 import { row2 } from '../../../asserts/data/dashboards/dashboard2';
 
@@ -14,12 +14,37 @@ class Row2 extends Component {
 	state = {
 		date: 'Today',
 	}
+	componentDidMount() {
+		const ctx = document.getElementById('row2').getContext('2d');
+		new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: ["January", "February", "March", "April", "May", "June", "July"],
+				datasets: [
+					{
+						label: 'Dataset 1',
+						backgroundColor: 'red',
+						borderColor: 'red',
+						borderWidth: 1,
+						data: [23, 54, 32, 12, 54, 76, 11],
+					},
+					{
+						label: 'Dataset 2',
+						backgroundColor: 'green',
+						borderColor: 'green',
+						borderWidth: 1,
+						data: [13, 24, 62, 22, 34, 56, 71],
+					},
+				],
+			},
+		})
+	}
 	onChange = (e) => this.setState({ date: e.target.value })
 	render() {
 		const date = this.state.date;
 		return (
-			<Row style={{ background: '#fff' }}>
-				<Row style={{ padding: 10}}>
+			<Row style={{ background: '#fff', marginLeft: 20, marginRight: 20 }}>
+				<Row style={{ padding: 10 }}>
 					<span style={{ fontSize: 16, fontWeight: 600 }}>Orders</span>
 					<div style={{ float: 'right' }}>
 						<RadioGroup onChange={this.onChange} defaultValue='Today'>
@@ -29,20 +54,11 @@ class Row2 extends Component {
 						</RadioGroup>
 					</div>
 				</Row>
-				<Row style={{ padding: 10, borderTop: '1px solid #ececec' }}>
-					<Col span={18}>
-						<ComposedChart width={1100} height={250} data={row2[date].data}>
-							<XAxis dataKey='name' />
-							<YAxis />
-							<Tooltip />
-							<Legend />
-							<CartesianGrid stroke='#f5f5f5' />
-							<Area type='monotone' dataKey='amt' fill='#c3dceb' stroke='#c3dceb' />
-							<Bar dataKey='pv' barSize={20} fill='#9fdabd' />
-							<Line type='monotone' dataKey='uv' stroke='#ff7300' />
-						</ComposedChart>
+				<Row style={{ padding: 20, borderTop: '1px solid #ececec' }}>
+					<Col md={24} lg={18}>
+						<canvas id='row2' style={{ maxHeight: 200 }}></canvas>
 					</Col>
-					<Col span={6}>
+					<Col md={24} lg={6}>
 						{row2[date].result.map((_r, _ri) => {
 							return (
 								<Row key={_ri} style={{ paddingBottom: 10 }}>

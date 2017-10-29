@@ -28,14 +28,14 @@ class Row1Col2 extends Component {
 						data: [2, 4, 13, 17, 6, 5],
 						fill: false,
 					},
-				]
-			}
+				],
+			},
 		});
 	}
 	render() {
 		return (
 			<Row className='row1col2Chart' style={{ marginTop: 35, padding: 10 }}>
-				<canvas id='row1col2'></canvas>
+				<canvas id='row1col2' style={{ maxHeight: 250, maxWidth: 800 }}></canvas>
 				<Row style={{ marginLeft: 50 }}>
 					{row1col2.content.map((_r, _ri) => {
 						return (

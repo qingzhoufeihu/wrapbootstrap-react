@@ -10,16 +10,16 @@ import Row3Col2_3 from './row3col2_3';
 
 const Row3 = () => {
 	return (
-		<Row>
-			<Col span={8}>
+		<Row style={{ marginLeft: 20 }}>
+			<Col md={24} lg={8} style={{ paddingRight: 20 }}>
 				<Row3Col1 />
 			</Col>
-			<Col span={16} style={{ paddingLeft: 25 }}>
+			<Col md={24} lg={16}>
 				<Row>
-					<Col span={12}>
+					<Col md={24} lg={12} style={{ paddingRight: 20 }}>
 						<Row3Col2_1 />
 					</Col>
-					<Col span={12} style={{ paddingLeft: 25 }}>
+					<Col md={24} lg={12} style={{ paddingRight: 20 }}>
 						<Row3Col2_2 />
 					</Col>
 				</Row>

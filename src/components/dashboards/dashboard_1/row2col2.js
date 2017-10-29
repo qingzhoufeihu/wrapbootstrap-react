@@ -36,24 +36,24 @@ const Row2Col2 = () => {
 					</div>
 				) : _r.ref && _r.like ? (
 					<Row>
-						{ _r.like ? <div style={{ float: 'right', border: "1px solid #ececec", marginTop: 2, padding: 2, fontSize: 8, width: 50 }}><Icon type="like" />  <strong>Like</strong></div> : '' }
+						{ _r.like ? <div style={{ float: 'right', border: "1px solid #ececec", marginTop: 2, padding: 2, fontSize: 10, width: 50 }}><Icon type="like" />  <strong>Like</strong></div> : '' }
 					</Row>
 				) : _r.ref && _r.love ? (
 					<Row>
-						{ _r.love ? <div style={{ float: 'right', border: "1px solid #ececec", marginTop: 2, padding: 2, fontSize: 8, width: 55 }}><Icon type="heart" />  <strong>Love</strong></div> : '' }
+						{ _r.love ? <div style={{ float: 'right', border: "1px solid #ececec", marginTop: 2, padding: 2, fontSize: 10, width: 55 }}><Icon type="heart" />  <strong>Love</strong></div> : '' }
 					</Row>
 				) : _r.like && _r.love ? (
 					<Row>
-						{ _r.like ? <div style={{ float: 'left', border: "1px solid #ececec", marginLeft: 52, padding: 2, fontSize: 8, width: 50 }}><Icon type="like" />  <strong>Like</strong></div> : '' }
-						{ _r.love ? <div style={{ float: 'left', border: "1px solid #ececec", marginLeft: 3, padding: 2, fontSize: 8, width: 55 }}><Icon type="heart" />  <strong>Love</strong></div> : '' }
+						{ _r.like ? <div style={{ float: 'left', border: "1px solid #ececec", marginLeft: 52, padding: 2, fontSize: 10, width: 50 }}><Icon type="like" />  <strong>Like</strong></div> : '' }
+						{ _r.love ? <div style={{ float: 'left', border: "1px solid #ececec", marginLeft: 3, padding: 2, fontSize: 10, width: 55 }}><Icon type="heart" />  <strong>Love</strong></div> : '' }
 					</Row>
 				) : _r.like ? (
 					<Row>
-						{ _r.like ? <div style={{ float: 'right', border: "1px solid #ececec", marginLeft: 52, padding: 2, fontSize: 8, width: 50 }}><Icon type="like" />  <strong>Like</strong></div> : '' }
+						{ _r.like ? <div style={{ float: 'right', border: "1px solid #ececec", marginLeft: 52, padding: 2, fontSize: 10, width: 50 }}><Icon type="like" />  <strong>Like</strong></div> : '' }
 					</Row>
 				) : _r.love ? (
 					<Row>
-						{ _r.love ? <div style={{ float: 'right', border: "1px solid #ececec", marginLeft: 52, padding: 2, fontSize: 8, width: 55 }}><Icon type="heart" />  <strong>Love</strong></div> : '' }
+						{ _r.love ? <div style={{ float: 'right', border: "1px solid #ececec", marginLeft: 52, padding: 2, fontSize: 10, width: 55 }}><Icon type="heart" />  <strong>Love</strong></div> : '' }
 					</Row>
 				) : ''}
 			</Row>
