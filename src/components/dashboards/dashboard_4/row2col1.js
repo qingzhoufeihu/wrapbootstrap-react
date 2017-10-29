@@ -2,11 +2,36 @@ import React, { Component } from 'react';
 import {
 	Row, Progress, Col,
 } from 'antd';
-import { YAxis, Tooltip, AreaChart, XAxis, CartesianGrid, Area } from 'recharts';
+import Chart from 'chart.js';
 
 import { row2col1 } from '../../../asserts/data/dashboards/dashboard4';
 
 class Row2Col1 extends Component {
+	componentDidMount() {
+		const ctx = document.getElementById('row2col1').getContext('2d');
+		new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: ["January", "February", "March", "April", "May", "June", "July"],
+				datasets: [
+					{
+						label: 'Dataset 1',
+						backgroundColor: 'red',
+						borderColor: 'red',
+						borderWidth: 1,
+						data: [23, 54, 32, 12, 54, 76, 11],
+					},
+					{
+						label: 'Dataset 2',
+						backgroundColor: 'green',
+						borderColor: 'green',
+						borderWidth: 1,
+						data: [13, 24, 62, 22, 34, 56, 71],
+					},
+				],
+			},
+		})
+	}
 	render() {
 		return (
 			<Row style={{ backgroundColor: '#fff', margin: 15, padding: 15 }}>
@@ -20,17 +45,10 @@ class Row2Col1 extends Component {
 					<span>Sales marketing.</span>
 				</Row>
 				<Row style={{ paddingBottom: 15 }}>
-					<Col span={16}>
-						<AreaChart width={600} height={200} data={row2col1.data1}>
-							<XAxis dataKey='name' />
-							<YAxis />
-							<CartesianGrid strokeDasharray='3 3' />
-							<Tooltip />
-							<Area type='monotone' dataKey='uv' stroke='#8884d8' fill='#8884d8' />
-							<Area type='monotone' dataKey='pv' stroke='#82ca9d' fill='#82ca9d' />
-						</AreaChart>
+					<Col sm={24} md={16}>
+						<canvas id='row2col1' style={{ maxHeight: 202 }}></canvas>
 					</Col>
-					<Col span={8}>
+					<Col sm={24} md={8}>
 						{row2col1.data2.map((_r, _ri) => {
 							return (
 								<Row key={_ri}>

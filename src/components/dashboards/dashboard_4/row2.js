@@ -10,10 +10,10 @@ class Row2 extends Component {
 	render() {
 		return (
 			<Row style={{ marginTop: 20 }}>
-				<Col span={16}>
+				<Col md={24} lg={16}>
 					<Row2Col1 />
 				</Col>
-				<Col span={8}>
+				<Col md={24} lg={8}>
 					<Row2Col2 />
 				</Col>
 			</Row>
