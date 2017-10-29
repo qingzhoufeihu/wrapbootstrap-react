@@ -10,10 +10,10 @@ class Row1 extends Component {
 	render() {
 		return (
 			<Row>
-				<Col span={16}>
+				<Col sm={24} md={16}>
 					<Row1Col1 />
 				</Col>
-				<Col span={8}>
+				<Col sm={24} md={8}>
 					<Row1Col2 />
 				</Col>
 			</Row>
